@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="orderstyle.css">
+    <style>
+        body::after {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://img.freepik.com/free-vector/hand-drawn-indian-cuisine-illustrations_23-2149353847.jpg?w=1800&t=st=1710790994~exp=1710791594~hmac=b8af38d2a52f8ea733c1d27bd3e9d11af1ebf4eb73b622728c0f97f0e61989d8');
+            opacity: 0.5;
+            z-index: -1;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body style="font-family: 'Roboto', sans-serif;">
+    <header>
+        <div class="container1">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav class="nav-links">
+                <a href="home.html" class="home-link">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="input-group">
+            <input type="text" id="order-title" placeholder="Enter order title">
+            <textarea id="order-description" placeholder="Enter order description"></textarea>
+            <button id="add-order-btn">Add Order</button>
+        </div>
+        <div id="order-list" class="order-list">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container1">
+            <p>&copy; 2024 Ghar Ka Khana - Homemade Food Delivery</p>
+        </div>
+    </footer>
+
+    <script src="orderscript.js"></script>
+</body>
+</html>
