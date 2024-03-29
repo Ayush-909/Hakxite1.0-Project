@@ -1,4 +1,3 @@
-// Smooth scrolling animation for internal anchor links and Home link
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.logo img {
+    max-width: 120px;
+}
+
+.nav-links {
+    position: absolute;
+    left: 44.9%;
+    top: 18%;
+}
+
+.nav-links a.home-link {
+    background-color: #333; 
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+.nav-links a {
+    background-color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFA500;
+}
+
+.container {
+    max-width: 800px;
+    margin: 180px auto 20px;
+    padding: 20px;
+    background-color: rgba(134, 134, 134, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: calc(50% - 10px);
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.input-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.input-group button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.input-group button:hover {
+    color: #FFA500;
+}
+
+
+.order-list {
+    margin-top: 30px;
+}
+
+.order {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.order:hover {
+    transform: translateY(-5px);
+}
+
+.order-title {
+    padding: 20px;
+    background-color: #FFA500;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-title:hover {
+    background-color: #FF7F00;
+}
+
+.order-description {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    display: none;
+}
+
+.order-description.active {
+    max-height: 500px;
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: fixed;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    z-index: 999;
+}
